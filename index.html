@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt-Kalorienrechner</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <form action="">
+        <div id="container-left">
+          <h2>Kalorien rechner</h2>
+          <h3>Grunddaten</h3>
+
+          <label for="alter">Alter</label>
+          <input id="alter" type="text" />
+          <br />
+
+          <label for="körpergröße">Körpergröße</label>
+          <input id="körpergröße" type="text" placeholder="cm" />
+
+          <input type="button" id="btn" value="submit" onclick="berechnen()" />
+        </div>
+        <div id="container-right">
+          <label id="label-sex">sex</label>
+
+          <input type="radio" id="weiblich" name="sex" checked />
+          <label for="weiblich"> weiblich</label>
+          <input type="radio" id="männlich" name="sex" />
+          <label for="männlich"> männlich</label>
+          <br />
+
+          <label id="label-gewicht" for="gewicht">Gewicht</label><br />
+          <input id="gewicht" type="numer" placeholder="kg" />
+          <label id="label-aktivität" for="freizeit-aktivität">Aktivität</label>
+
+          <select name="" id="freizeit-aktivität">
+            <option value="0.95">schlafend</option>
+            <option value="1.2">semi-wach</option>
+            <option value="1.5">wenig Auslastung/ sitzende Tätigkeit</option>
+            <option value="1.7">
+              sitzende, stehende Tätigkeit(Büro Arbeit,Kraftfahrer,etc)
+            </option>
+            <option value="1.9">
+              überwiegend gehende oder stehende Tätigkeit
+            </option>
+            <option value="2.2">körperlich anstrengende Arbeit</option>
+          </select>
+        </div>
+      </form>
+    </section>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
