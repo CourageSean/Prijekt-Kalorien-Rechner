@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projekt-Kalorienrechner</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
   </head>
   <body>
     <section>
       <form action="">
         <div id="container-left">
-          <h2>Kalorien rechner</h2>
+          <h2>
+            <span id="K"> K</span>alorien &nbsp; &nbsp;<span> Rechner</span>
+          </h2>
           <h3>Grunddaten</h3>
 
           <label for="alter">Alter</label>
@@ -21,7 +24,12 @@
           <label for="körpergröße">Körpergröße</label>
           <input id="körpergröße" type="text" placeholder="cm" />
 
-          <input type="button" id="btn" value="submit" onclick="berechnen()" />
+          <input
+            type="button"
+            id="btn"
+            value="Calculate"
+            onclick="berechnen();updateChart() "
+          />
         </div>
         <div id="container-right">
           <label id="label-sex">sex</label>
@@ -49,8 +57,14 @@
             <option value="2.2">körperlich anstrengende Arbeit</option>
           </select>
         </div>
+        <div id="canvas-wrapper">
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
       </form>
+
+      <article></article>
     </section>
+
     <script src="assets/js/main.js"></script>
   </body>
 </html>
