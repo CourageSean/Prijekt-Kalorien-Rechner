@@ -113,7 +113,7 @@ h2 {
   position: absolute;
   top: 80px;
   color: red;
-  left: 22.5%;
+  left: 23.5%;
 }
 span {
   color: #fff;
@@ -123,7 +123,7 @@ h3 {
   padding-bottom: 30px;
   color: #e30222;
   -webkit-text-decoration: underline #e30222;
-          text-decoration: underline #e30222;
+  text-decoration: underline #e30222;
   font-size: 1rem;
   font-weight: 600;
 }
